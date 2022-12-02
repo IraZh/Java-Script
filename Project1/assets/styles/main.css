@@ -1,0 +1,365 @@
+.body {
+    margin-left: 135px;
+    margin-right: 135px;
+}
+.section__carousel {
+    display: grid;
+    grid-area: section__carousel;
+    grid-template-areas: 
+    "section__carousel__title section__carousel__image";
+    grid-template-columns: 2fr 1fr;    
+}
+
+.section__carousel__title {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.section__carousel__image {
+    display: grid;
+    grid-area: section__carousel__image;
+    position: relative;
+}
+.section__carousel__title1 {
+    margin-bottom: 0em;
+    padding-bottom: 0em;
+    font-weight: 300;
+    font-size: 64px;
+    line-height: 64px;
+    color: #BDBDBD;
+}
+.section__carousel__title2 {
+    margin-top: 0em;
+    padding-top: 0em;
+    font-weight: 700;
+    font-size: 64px;
+    line-height: 64px;
+    color:#333333;
+}
+.section__carousel__btn {
+    position: absolute;
+    bottom: 0px;
+    width: 222px;
+    height: 71px;
+    background-color: #FFFFFF;
+    border: none !important;
+    color: #333333;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 12px;
+    font-family: Roboto;
+    font-weight: 400;
+    letter-spacing: 0.2em;
+    text-transform: uppercase;
+}
+.section__carousel__btn:hover {
+    background-color: #BDBDBD;
+}
+
+.section__about {
+    margin-top: 120px;
+    padding-top: 0%;
+    height: 550px;
+    display: grid;
+    grid-template-areas: "section__about__image1 section__about__image2 section__about__text";
+    grid-template-columns: 2fr 2fr 1fr;
+    background-color: #FBFBFB;
+}
+.section__about__image1 {
+    display: grid;
+    grid-area: section__about__image1;
+    padding-top: 30px;
+    margin-left: 100px;
+}
+.section__about__image2 {
+    display: grid;
+    grid-area: section__about__image2;
+    padding-top: 60px;
+    margin-right: 0%;
+    padding-right: 0%;
+}
+.section__about__text {
+    display: grid;
+    grid-area: section__about__text;
+    padding-top: 30px;
+    margin-right: 0%;
+    padding-right: 70px;
+    margin-left: 0%;
+    padding-left: 0%;
+} 
+.section__about__image1__1 {
+    margin-bottom: 0%;
+    padding-bottom: 0%;
+}
+.section__about__image1__2 {
+    margin-top: 30px;
+    padding-top: 0%;
+}
+.section__about__image2__3 {
+    margin-right: 0%;
+    padding-right: 0%;
+}
+.section__about__text__title {
+    margin-top: 0%;
+    padding-top: 0%;
+    margin-bottom: 0%;
+    padding-bottom: 0%;
+    font-family: Roboto;
+    font-weight: 300;
+    font-size: 64px;
+    line-height: 64px;
+    color: #BDBDBD;
+}
+.section__about__text__subtitle {
+    margin-top: 20%;
+    padding-top: 0%;
+    margin-left: 0%;
+    padding-left: 0%;
+    margin-right: 0%;
+    padding-right: 0%;
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: 300;
+    font-size: 16px;
+    color: #000000;
+}
+.section__about__text__button {
+    height: 71px;
+    width: 222px;
+    background-color: #FFFFFF;
+    border: none;
+    color: #333333;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 12px;
+    font-family: Roboto;
+    font-weight: 400;
+    letter-spacing: 0.2em;
+    text-transform: uppercase;
+    box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24), 0 16px 30px 0 rgba(0,0,0,0.19);
+}
+.section__about__text__button:hover {
+    background-color: #BDBDBD;
+}
+
+.section__mission {
+    margin-top: 120px;
+    padding-top: 0%;
+}
+.section__mission__title {
+    margin-top: 0%;
+    padding-top: 0%;
+    margin-bottom: 0%;
+    padding-bottom: 0%;
+    font-family: Roboto;
+    font-weight: 300;
+    font-size: 64px;
+    line-height: 64px;
+    color: #BDBDBD;
+}
+.section__mission__container {
+    display: grid;
+    grid-template-areas: 
+    "section__mission__container__1 section__mission__container__2 section__mission__container__3 section__mission__container__4";
+    grid-template-columns: 1fr 2fr 1fr 2fr;
+    padding-top: 0%;
+    margin-top: 60px;
+}
+.section__mission__container__1 {
+    display: grid;
+    grid-area: section__mission__container__1;
+    margin-top: 0%;
+    padding-top: 0%;
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 900;
+    font-size: 200px;
+    line-height: 234px;
+    color: #F2F2F2;
+}
+.section__mission__container__2 {
+    display: grid;
+    grid-area: section__mission__container__2;
+    margin-top: 0%;
+    padding-top: 50px;
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 22px;
+    line-height: 36px;
+    color: #333333;;
+}
+.section__mission__container__3 {
+    display: grid;
+    grid-area: section__mission__container__3;
+    margin-top: 0%;
+    padding-top: 0%;
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 900;
+    font-size: 200px;
+    line-height: 234px;
+    color: #F2F2F2;
+}
+.section__mission__container__4 {
+    display: grid;
+    grid-area: section__mission__container__4;
+    margin-top: 0%;
+    padding-top: 50px;
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 22px;
+    line-height: 36px;
+    color: #333333;;
+}
+.section__galery__title {
+    margin-top: 0%;
+    padding-top: 0%;
+    margin-bottom: 0%;
+    padding-bottom: 0%;
+    font-family: Roboto;
+    font-weight: 300;
+    font-size: 64px;
+    line-height: 64px;
+    color: #BDBDBD;
+}
+.section__galery__item {
+    display: flex;
+    flex-direction: column;
+}
+.section__galery__image1__title{
+    position: absolute;
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 64px;
+    line-height: 64px;
+    color: #FFFFFF;
+}
+.mar{
+    margin: 15px;
+}
+
+.section__galery__item1 {
+    display: flex;
+    flex-direction: row;
+
+}
+.section__galery__image1 {
+    display: flex;
+    position: relative;
+}
+
+
+.section__galery__image2 {
+    display: grid;
+    grid-area: section__galery__image2;
+    
+}
+.section__galery__item2 {
+    display: flex;
+    flex-direction: row;
+
+}
+
+.section__galery__image3 {
+    display: grid;
+    grid-area: section__galery__image3;
+    
+}
+.section__galery__image4 {
+    display: grid;
+    grid-area: section__galery__image4;
+    
+}
+.section__galery__image5 {
+    display: grid;
+    grid-area: section__galery__image5;
+    
+}
+.section__galery__button {
+    display: grid;
+    grid-area: section__galery__button;
+    margin-top: 30px;
+    height: 71px;
+    width: 222px;
+    background-color: #333333;
+    border: none;
+    color: #FFFFFF;;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 12px;
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: 400;
+    letter-spacing: 0.2em;
+    text-transform: uppercase;
+    box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24), 0 16px 30px 0 rgba(0,0,0,0.19);
+}
+.section__contact__title {
+    margin-top: 150px;
+    padding-top: 0%;
+    margin-bottom: 0%;
+    padding-bottom: 0%;
+    font-family: Roboto;
+    font-weight: 300;
+    font-size: 64px;
+    line-height: 64px;
+    color: #BDBDBD;
+}
+.section__contact__container {
+    display: grid;
+    grid-template-areas: 
+    "section__contact__container__input section__contact__container__image";
+    grid-template-columns: 1fr 1fr;
+    margin-top: 22px;
+    margin-bottom: 100px;
+}
+.section__contact__container__input {
+    display: grid;
+    grid-area: section__contact__container__input;
+    border-radius: 5px;
+    background-color: #FFFFFF;
+    padding: 10px;
+}
+.section__contact__container__image {
+    display: grid;
+    grid-area: section__contact__container__image;
+    margin-left: 30px;
+}
+.section__contact__container__button {
+    margin-top: 77px;
+    height: 71px;
+    width: 222px;
+    background-color: #333333;
+    border: none;
+    color: #FFFFFF;;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 12px;
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: 400;
+    letter-spacing: 0.2em;
+    text-transform: uppercase;
+    box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24), 0 16px 30px 0 rgba(0,0,0,0.19);
+}
+input {
+    background-color: #F3F3F3;;
+    padding: 12px 20px;
+    cursor: pointer;
+    border:#333333;
+    margin-bottom: 10px;
+}
+textarea {
+    background-color: #F3F3F3;;
+    padding: 12px 20px;
+    cursor: pointer;
+    border:#333333;
+}
