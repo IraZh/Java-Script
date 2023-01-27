@@ -1,0 +1,35 @@
+.title {
+    text-align: center;
+    color:#293133;
+    font-size: vw;
+}
+
+.images {
+    display: flex;
+    justify-content: center;
+}
+
+.switch {
+    display: flex;
+    justify-content:center;
+    padding-top: 15px;
+}
+
+.button {
+    background-color: #293133; /* Green */
+    border: none;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+}
+
+.button:hover {
+    box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24), 0 17px 50px 0 rgba(0,0,0,0.19);
+}
+
+.button-1 {
+    padding-right: 100px;
+}
