@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../assets/styles/normalize.css" />
+	<link rel="stylesheet" href="./assets/styles/index.css" />
+    <title>Корзина товаров</title>
+</head>
+<body>
+    <section class="section-cart">
+        <header class="section-cart__header">
+            <div class="container">
+                <h1 class="title-1">Корзина товаров</h1>
+            </div>
+        </header>
+        <div class="section-cart__body">
+            <div class="container">
+
+                <section class="cart">
+                    <header class="cart-header">
+                        <div class="cart-header__title">наименование</div>
+                        <div class="cart-header__description">описание</div>
+                        <div class="cart-header__cost">стоимость</div>
+                    </header>
+
+                    <section class="product">
+                        <div class="product__img"><img src="./assets/images/img1.jpg" alt="Parfum" height="150px" width="100px"></div>
+                        <div class="product__title">Givenchy L’Interdit Rouge Eau de Parfum</div>
+                        <div class="product__description">Парфюмерная вода | 35 мл</div>
+                        <div class="product__price number" id="price_1">7990</div>
+                    </section>
+
+                    <section class="product">
+                        <div class="product__img"><img src="./assets/images/img2.jpg" alt="Parfum" height="150px" width="100px"></div>
+                        <div class="product__title">Paco Rabanne 1 Million Eau de Toilette</div>
+                        <div class="product__description">Туалетная вода | 50 мл</div>
+                        <div class="product__price number" id="price_2">7560</div>
+                    </section>
+
+                    <section class="product">
+                        <div class="product__img"><img src="./assets/images/img3.jpg" alt="Parfum" height="150px" width="100px"></div>
+                        <div class="product__title">Carolina Herrera Good Girl Eau de Parfum</div>
+                        <div class="product__description">Парфюмерная вода | 30 мл</div>
+                        <div class="product__price number" id="price_3">7345</div>
+                    </section>
+
+                    <section class="product">
+                        <div class="product__img"><img src="./assets/images/img4.jpg" alt="Parfum" height="150px" width="100px"></div>
+                        <div class="product__title">Costume National Free D'Homme Eau de Parfum</div>
+                        <div class="product__description">Парфюмерная вода | 50 мл</div>
+                        <div class="product__price number" id="price_4">5900</div>
+                    </section>
+
+                    <footer class="cart-footer">
+                        <div class="cart-footer__button"><button class="button">Скидка 20%</button></div>
+                        <div class="cart-footer__price number" id="submit" onclick="discount()">28795</div>
+                    </footer>
+                </section>
+
+            </div>
+        </div>
+    </section>
+    <script src="index.js"></script>
+</body>
+</html>
