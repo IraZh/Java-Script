@@ -69,3 +69,20 @@ textarea{
 .message{
     height: 300px;
 }
+
+.checkbox{
+    padding-bottom: 25px;
+}
+
+.checkbox1{
+    padding-left: 50px;
+}
+
+.checkbox2{
+    padding-left: 50px;
+}
+
+.messageAvatar{
+    width: 5px;
+    height: 5px;
+}

@@ -4,6 +4,21 @@ const avatarInput = document.querySelector('#avatar');
 const textInput = document.querySelector('#comment');
 const button = document.querySelector('#send');
 const containerComment = document.querySelector('.message');
+const choiceYes=document.querySelector('#radio_1');
+
+
+const avatarCollection = [
+    'assets/images/avatar.png',
+    'assets/images/circle.png',
+    'assets/images/flat.png',
+    'assets/images/image.png',
+    'assets/images/girl_face.png',
+];
+
+function randomAvatar() {
+    let random = Math.floor(Math.random() * avatarCollection.length);
+    return avatarCollection[random];
+}
 
 const createComment=()=>{
     let message = document.createElement('div');
@@ -11,20 +26,33 @@ const createComment=()=>{
     containerComment.append(message);
 
     let messageComment = document.createElement('p');
-    messageComment.className ='message_Comment';
+    messageComment.className ='message_comment';
     messageComment.textContent = checkSpam(textInput.value);
     containerComment.prepend(messageComment);
 
     let messageName = document.createElement('p');
     messageName.className ='message_Name';
-    messageName.textContent = checkName(nameInput.value);
+    if (choiceYes.checked===true){
+        messageName.textContent = checkName(nameInput.value);
+    }
+    else {
+        messageName.textContent = "username";
+    }
     containerComment.prepend(messageName);
-
 
     let messageAvatar = document.createElement('img');
     messageAvatar.className = 'message_Avatar';
-    messageAvatar.src = avatarInput.value;
+    if( avatarInput.value !=='' ) {
+        messageAvatar.src = avatarInput.value; }
+    else{
+        messageAvatar.src = randomAvatar();
+    }
     containerComment.prepend(messageAvatar);
+
+    let messageTime = document.createElement('div');
+    messageTime.className ='message_time';
+    messageTime.textContent = new Date();
+    containerComment.prepend(messageTime);
 }
 
 const checkSpam = (string) =>{
@@ -34,10 +62,10 @@ const checkSpam = (string) =>{
 }
 
 const checkName = (name) =>{
-    let Username = name;
-    let Username0 = Username.toLowerCase().trim();
-    let Username1 = Username0.charAt(0).toUpperCase() + Username0.slice(1);
-    return Username1;
+    let username = name;
+    let username0 = username.toLowerCase().trim();
+    let username1 = username0.charAt(0).toUpperCase() + username0.slice(1);
+    return username1;
 }
 
 button.addEventListener('click', () =>{
