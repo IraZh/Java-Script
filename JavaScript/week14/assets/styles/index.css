@@ -1,0 +1,65 @@
+.wrapper{
+    margin: 0 5% 0 5%;
+    padding: 0;
+    max-width: 100%;
+    background-image: url(../images/background.jpg);
+    color: #35170C;
+}
+
+.title{
+    font-size: 2.2vw;
+    color: #35170C;
+    text-align: center;
+    padding-top: 10%;
+}
+
+.filmmaker{
+    border-top: 1px dashed #35170C;
+    border-bottom: 1px dashed #35170C;
+    display: grid;
+    grid-template-columns: 5% 1fr 10%;
+    padding-top: 0.5%; 
+    padding-bottom: 0.5%;
+    font-size: 1.5vw;
+    text-align: start;
+}
+
+.position{
+    font-size: 1.2vw;
+}
+.name{
+    margin: 0;
+}
+.filmmaker__info{
+    display: flex;
+    flex-direction: column;
+}
+.filmmaker__number{
+    padding-left: 2%;
+    width: 2vw;
+}
+.filmography{
+    padding-right: 1%;
+    display: flex;
+    align-items: center;
+}
+
+.filmography__link{
+    color: #000;
+    text-decoration: none;
+    font-size: 1.5vw;
+}
+.filmography__link:hover{
+    text-decoration: dashed;
+    color: #755C48;
+}
+
+.film-list__title{
+    padding-top: 3%;
+    padding-bottom: 1%;
+    font-size: 1.9vw;
+}
+.film-list__container{
+    font-size: 1.5vw;
+    padding-bottom: 5%;
+}
