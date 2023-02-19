@@ -3,7 +3,7 @@ const button = document.querySelector('#send');
 const allTasks = document.querySelector('.all_tasks');
 const textInput = document.querySelector('#task');
 const emptyList = document.querySelector('#empty-list');
-const button2 = document.getElementById('#delete');
+const button2 = document.getElementById('delete');
 
 
 
@@ -12,23 +12,23 @@ const createTask=()=>{
     const taskHTML = `
     <li class="task-list">
     <p class="new-task">${taskText}</p>
-    <input type="checkbox"  class="checkbox"id="checkbox" />
-    <label for="checkbox"  type="checkbox" name="author"></label>
+    <input type="checkbox"  class="checkbox" id="checkbox${taskText}" />
+    <label for="checkbox${taskText}"  type="checkbox" name="author"></label>
     </li>`;
 
     allTasks.insertAdjacentHTML('beforeend', taskHTML);
 
     task.value = "";
-    if(allTasks.children.length > 1) {
+    if(allTasks.children.length > 0) {
         emptyList.classList.add('none')
     } 
+
+    button2.disabled=false;
 }
 
 function deleteTasks(){
     allTasks.innerHTML="";
-    button2.disabled=true;
-    button2.style.cursor="button2:disabled";
-    allTasks.length=0;
+    button2.disabled=true; 
 }
 
 button.addEventListener('click', () =>{
