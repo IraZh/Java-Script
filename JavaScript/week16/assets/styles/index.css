@@ -1,0 +1,134 @@
+.body{
+    background-color: honeydew;
+}
+
+h1{
+    display: flex;
+    justify-content: center;
+    margin-bottom: 0%;
+    padding-bottom: 0%;
+}
+
+.main{
+    margin: 2% 24% 3% 24%;
+    padding: 2% 5% 5% 5%;
+    max-width: 100%;
+}
+
+.form{
+    display: flex;
+    flex-direction: column;
+    justify-items: center;
+    row-gap: 1vw;
+    font-size: 1.3vw;
+}
+.brand{
+    display: grid;
+    grid-template-columns: 45% 1fr;
+    column-gap: 5%;
+}
+
+.brand__label {
+    text-align: end;
+}
+.model{
+    display: grid;
+    grid-template-columns: 45% 1fr;
+    column-gap: 5%;
+}
+
+.model__label{
+    text-align: end;
+}
+.fuel-options{
+    display: grid;
+    grid-template-columns: 45% 1fr;
+    column-gap: 5%;
+}
+.fuel-options__question{
+    display: flex;
+    justify-content: end;
+}
+.brand__options, .model__options{
+    border: 1px solid rgb(105, 111, 121);
+}
+
+.engine-volume{
+    display: grid;
+    grid-template-columns: 45% 1fr;
+    column-gap: 5%;
+    padding: 1% 1.5% 1% 1.5%;
+}
+.engine-volume__input{
+    border: 1px solid rgb(105, 111, 121);
+}
+
+.engine-volume__label{
+    text-align: end;
+}
+.vehicle-condition{
+    display: grid;
+    grid-template-columns: 45% 1fr;
+    column-gap: 5%; 
+}
+
+.vehicle-condition__question{
+    display: flex;
+    justify-content: end;
+}
+
+.owners{
+    display: grid;
+    grid-template-columns: 45% 1fr;
+    column-gap: 5%;
+}
+.owners__question__label{
+    text-align: end;
+}
+
+.notExist{
+    display: none;
+}
+
+.payment{
+    display: grid;
+    grid-template-columns: 45% 1fr;
+    column-gap: 5%; 
+}
+.payment__question{
+    display: flex;
+    justify-content: end;
+}
+
+.method{
+    padding-bottom: 10%;
+}
+
+.button {
+    display: flex;
+    justify-content: center;
+    padding-bottom: 5%;
+    font-size: 1.1vw;
+    
+}
+.button__count{
+    background-color: rgb(10, 46, 104);
+    color: rgb(240, 238, 238);
+    padding: 1.2% 2.5% 1.2% 2.5%;
+    border-radius: 0.2vw;
+}
+
+.text{
+    margin: -2% 0 0 0;
+    font-size: 0.7vw;
+    color: rgb(216, 21, 21);
+    text-align: end;
+}
+.result__sum{
+    padding-bottom: 4%;
+    font-weight: bold;
+    font-size: 1.5vw;
+}
+.content{
+    font-size: 1.2vw;
+}
