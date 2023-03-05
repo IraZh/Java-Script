@@ -44,6 +44,8 @@ class Bike extends Transport {
     }
 }
 
+const main=document.querySelector('.main');
+
 const data = [
     {
     id: 1,
@@ -59,7 +61,7 @@ const data = [
     brand: 'Mercedes-Benz',
     doors: 4,
     price: 2800000,
-    image: 'https://www.mercedes-benz-mena.com/en/passengercars/mercedes-benz-cars/models/e-class/sedan-w213-fl/explore/_jcr_content/notificationboxes/notificationbox/image.MQ6.12.20211013084329.jpeg'
+    image: 'https://avatars.mds.yandex.net/get-verba/216201/2a000001849f191073704ae650c1cc538a48/cattouchret'
     },
     {
     id: 3,
@@ -79,3 +81,27 @@ const data = [
     }
 ];
 
+
+data.forEach((item)=>{
+    if (item.type === 'car'){
+        const car = new Car(item.type, item.price, item.brand, item.doors);
+        const carElement = document.createElement('div');
+        carElement.innerHTML = `
+            <img class="image" src="${item.image}" alt="${item.brand}">
+            <h2>${car.getInfo()}</h2>
+            <p>${car.getDoorsCount()}</p>
+            <p>${car.getPrice()}</p>
+        `;
+        main.appendChild(carElement);
+    } else if (item.type === 'bike') {
+        const bike = new Bike(item.type, item.price, item.brand, item.maxSpeed);
+        const bikeElement = document.createElement('div');
+        bikeElement.innerHTML = `
+            <img class="image" src="${item.image}" alt="${item.brand}">
+            <h2>${bike.getInfo()}</h2>
+            <p>${bike.getMaxSpeed()}</p>
+            <p>${bike.getPrice()}</p>
+        `;
+        main.appendChild(bikeElement);
+    }
+});
