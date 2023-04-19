@@ -91,10 +91,10 @@ let jsonHero = `[{
 }]`;
 
 
-const hero = JSON.parse(jsonHero);
+let hero = JSON.parse(jsonHero);
 
 document.addEventListener("DOMContentLoaded", function() {
-    let superheroesContent =``;
+    let superheroesContent ='';
     for (let hero of superheroes) {
         superheroesContent += `<div class = "superheroes">
         <h2 class= "name"> ${hero.name}</h2>
