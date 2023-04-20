@@ -1,0 +1,71 @@
+.title {
+    display: flex;
+    justify-content: center;
+    font-family: cursive;
+    font-style: italic;
+    font-variant: small-caps;
+    font-size: 2.3em;
+    color: cadetblue;
+}
+.container{
+    margin: 2%;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    row-gap: 2%;
+    column-gap: 2%;
+    font-size: 1.1vw;
+}
+
+.superheroes_card {
+    padding: 3%;
+    display: grid;
+    grid-template-rows: 2% 11fr 5% 2% 2% 2% 2% 6% 6% 5% 3fr;
+    row-gap: 1%;
+    border: 2px solid rgb(41, 110, 201);
+    border-radius: 5%;
+}
+
+.superheroes {
+    display: grid;
+    row-gap: 1%;
+    column-gap: 1%;
+}
+ .name{
+    display: flex;
+    justify-content: center;
+    font-family: cursive;
+    font-style: normal;
+    color:cadetblue;
+ }
+
+.image{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.hero_image{
+    height: 80%;
+    width: 80%;
+    border-radius: 5%;
+}
+
+.rating{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 40px;
+}
+
+.rating__star {
+    display: inline-block;
+    color: #000000;
+    cursor: pointer;
+}
+
+.rating__star:hover,
+.rating__star:focus,
+.rating__star.active {
+    color:gold;
+}
