@@ -1,0 +1,11 @@
+.container {
+    padding: 2%;
+    margin: 1%;
+    border: 2px solid rgb(153, 16, 135);
+}
+
+.container__title {
+    padding-bottom: 0.5%;
+    font-family: cursive;
+    font-style: italic;
+}
